@@ -1,0 +1,593 @@
+    /* BARRA DE NAVEGAÇÃO */
+.navbartop {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 10vh;
+    background: #00435E;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.leftlogo {
+    position: relative;
+    width: 10%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightlogo {
+    display: flex;
+    width: 90%;
+    margin-right: 5%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-logo {
+    height: 9vh;
+}
+
+.rightlogo a {
+    padding: 10px;
+}
+
+.hide-on-med-and-down li {
+    list-style-type: none; /* Remove o marcador padrão */
+    width: 30%;
+}
+.btn-navbar  {
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+    color: #81DBFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s; 
+    font-family: oswald;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+
+.btn-navbar:hover {
+    color: #255784;
+    background: #81DBFF;
+    box-shadow: 0 0 10px #81DBFF,
+                0 0 40px #81DBFF,
+                0 0 80px #81DBFF;
+    transition-delay: 1s;
+}
+
+.btn-navbar span {
+    position: absolute;
+    display: block;
+}
+
+.btn-navbar span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#81DBFF);
+}
+.btn-navbar:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.btn-navbar span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#81DBFF);
+}
+
+.btn-navbar:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.btn-navbar span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent, #81DBFF);
+}
+
+.btn-navbar:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;    
+}
+
+.btn-navbar span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, #81DBFF);
+}
+
+.btn-navbar:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;    
+}
+
+
+/* FIM DA BARRA DE NAVEGAÇÃO */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #222;
+}
+
+.main-login{
+    width: 100vw; /* Largura da div*/
+    height: 100vh; /* Altura da div*/    
+    background: #000820; /* Cor de fundo*/
+    display: flex; /* Colocar lado a lado*/
+    justify-content: center; /* centralizar*/
+    align-items: center; /* Centralizar e descer */
+}
+.left-login{
+    width: 50vw; /*Largura da div*/
+    height: 100vh;/* Altura da div*/
+    display: flex; /* colocar lado a lado*/
+    justify-content: center; /* centralizar*/
+    align-items: center; /* centralizar e descer*/
+    flex-direction: column; /* descer o outro texto*/
+}
+
+.left-login h1{
+    color: #81DBFF; /* cor da fonte*/
+    font-weight: 800; /* aumenta a grossura da fonte*/
+    margin: 0;
+}
+
+.textfield h1{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: rgb(128, 219, 255); /* cor da fonte*/
+    font-weight: 800; /* aumenta a grossura da fonte*/
+    margin: 0;
+    font-size: 40px;
+    text-shadow: 0px 0px 8px rgba(128, 219, 255, 0.8);
+}
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-login{
+    position: relative;
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #00435E;
+    padding: 50px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px #00000056;
+}
+.textfield {
+    width: 70%;
+    flex-direction: column;
+    align-items: flex-start; /* Troca de eixos*/
+    justify-content: center; /* coloca um embaixo do outro*/
+    margin: 10px;
+    box-sizing: border-box;
+    
+}
+
+.textfield input{
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 20px;
+    background: #226986;
+    color: #81DBFF; /* cor da fonte*/
+    font-size: 12pt;
+    box-shadow: 5px 5px 3px #00000056;
+    outline: none;
+    box-sizing: border-box; /* Deixa do tamanho da div*/
+    
+}
+.textfield label{
+    color: #81DBFF;
+    margin-bottom: 1px;    
+}
+.textfield input::placeholder{
+    color: #F0FFFF94;
+}
+
+.imagem-left{
+    height: 60vh;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+}
+
+/* DIV DOS BOTÕES DE ESQUECI E A SENHA E LOGIN*/
+.btns-login {
+    display: block;
+    position: relative;
+    width: 70%;
+    padding: 0;
+    margin-top: -10px;
+}
+
+/* BOTÃO LOGIN*/
+
+.btn-login  {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
+    color: #81DBFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s; 
+    font-family: oswald;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+
+.btn-login:hover {
+    color: #255784;
+    background: #81DBFF;
+    box-shadow: 0 0 10px #81DBFF,
+                0 0 40px #81DBFF,
+                0 0 80px #81DBFF;
+    transition-delay: 1s;
+}
+
+.btn-login span {
+    position: absolute;
+    display: block;
+}
+
+.btn-login span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#81DBFF);
+}
+.btn-login:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.btn-login span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#81DBFF);
+}
+
+.btn-login:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.btn-login span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent, #81DBFF);
+}
+
+.btn-login:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;    
+}
+
+.btn-login span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, #81DBFF);
+}
+
+.btn-login:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;    
+}
+
+/* BOTÃO ESQUECI A SENHA*/
+
+.btn-esqsenha {
+
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    overflow: hidden;
+    transition: 0.2s; 
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    margin-left: 0px;
+    border-radius: 3px;
+    
+    
+}
+
+.btn-esqsenha:hover {
+    color: #255784;
+    background: #fff;
+    box-shadow: 0 0 10px #2196f3,
+                0 0 40px #2196f3,
+                0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.btn-esqsenha span {
+    position: absolute;
+    display: block;
+}
+
+.btn-esqsenha span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#fff);
+}
+.btn-esqsenha:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.btn-esqsenha span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#fff);
+}
+
+.btn-esqsenha:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.btn-esqsenha span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent, #fff);
+}
+
+.btn-esqsenha:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;    
+}
+
+.btn-esqsenha span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, #fff);
+}
+
+.btn-esqsenha:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;    
+}
+    
+.btncad { 
+    background-color: #00435E;
+    color: #81DBFF;
+    text-transform: uppercase;
+    font-weight: 850;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    box-shadow: 10px #81DBFF;
+}
+
+.cont {
+    position: relative;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 1px solid #111;
+    padding-bottom: 10px;
+}
+  
+.cont .inputArea input {
+    position: relative;
+    width: 100%;
+    background: #226986;
+    border: none;
+    outline: none;
+    color: aliceblue;
+}
+
+
+.cadastrar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 1px solid #111;
+    padding-bottom: 50px;    
+}
+.container h2 {
+    color: white;
+    font-weight: 500;
+}
+ .container input::placeholder{
+    color: #F0FFFF94;
+}
+.container label{
+    color: #81DBFF;
+}
+  
+.container .inputArea {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: #226986;
+    color: #81DBFF; /* cor da fonte*/
+    font-size: 12pt;
+    box-shadow: 5px 5px 3px #00000056;
+    outline: none;
+    box-sizing: border-box; /* Deixa do tamanho da div*/
+}
+  
+.container .inputArea input {
+    position: relative;
+    width: 100%;
+    background: #226986;
+    border: none;
+    outline: none;
+    color: aliceblue;
+}
+  
+.container .strengthMeter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #00435E;
+}
+  
+.container .strengthMeter::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    transition: 0.5s;
+    background: #f00;
+    margin-top: -10px;
+}
+  
+.container.weak .strengthMeter::before {
+    width: 10%;
+    background: #f00;
+    filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 10px #f00)
+      drop-shadow(0 0 20px #f00);
+}
+  
+.container.moderate .strengthMeter::before {
+    width: 70%;
+    background: #eedc3d;
+    filter: drop-shadow(0 0 5px #eedc3d) drop-shadow(0 0 10px #eedc3d)
+      drop-shadow(0 0 20px #eedc3d);
+}
+  
+.container.strong .strengthMeter::before {
+    width: 100%;
+    background: #18e605;
+    filter: drop-shadow(0 0 5px #18e605) drop-shadow(0 0 10px #18e605)
+      drop-shadow(0 0 20px #18e605);
+}
+  
+.container .strengthMeter::after {
+    position: absolute;
+    top: -45px;
+    left: 30px;
+    transition: 0.5s;
+    color: aliceblue;
+    
+}
+  
+.container.container.weak .strengthMeter::after {
+    content: "Senha Fraca";
+    color: #f00;
+    filter: drop-shadow(0 0 5px#f00);
+}
+  
+.container.container.container.moderate .strengthMeter::after {
+    content: "Senha Moderada";
+    color: #eedc3d;
+    filter: drop-shadow(0 0 5px#eedc3d);
+}
+  
+.container.container.container.container.strong .strengthMeter::after {
+    content: "Senha Forte";
+    color: #18e605;
+    filter: drop-shadow(0 0 5px#18e605);
+}
+  
+
+.inputArea i {
+    color: #81DBFF;
+    position: absolute;
+    top: 28%;
+    right: 5%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+}
+.inputArea {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}            
